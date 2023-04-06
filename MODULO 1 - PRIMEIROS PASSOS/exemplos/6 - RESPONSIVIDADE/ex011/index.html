@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Responsividade</title>
+    <style>
+        main{
+            width: 1050px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: 900;
+            font-style: normal;
+            text-align: center;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.1em;
+        }
+        body{
+            background-image: linear-gradient(to bottom, rgb(56, 56, 56), black);
+        }
+        audio{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Imagens Dinâmicas</h1>
+        <p>Abra esse site em diferentes tamanho de tela para testar sua <q>Responsividade</q> </p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="media/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="media/foto-m.png" type="image/png">
+            <img src="media/foto-g.png" alt="Imagem Grande">
+        </picture> <hr>
+        <h1>Reproduzindo audios</h1>
+        <p>Aprendendo a colocar qualquer audio em meu site!</p>
+        <audio preload="metadata" controls muted loop autoplay>
+            <source src="media/happy-mistake.mp3" type="audio/mpeg">
+            <source src="media/happy-mistake.ogg" type="audio/ogg">
+            <source src="media/happy-mistake.wav" type="audio/wav">
+            Infelizmente não foi possível abrir o arquivo <a href="media/happy-mistake.mp3" download="audio/mpeg">baixe aqui</a>
+        </audio>
+    </main>
+</body>
+</html>
