@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maneira de centralizar container</title>
+    <style>
+        div#fora{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: tomato;
+        }
+        div#dentro{
+            width: 512px;
+            height: 512px;
+            background-image: url(https://img.assinaja.com/upl/lojas/mundosinfinitos/imagens/foto-one-piece.png);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="fora">
+        <div id="dentro">
+            Rei dos piratas
+        </div>
+    </div>
+</body>
+</html>
